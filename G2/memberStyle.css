@@ -1,0 +1,86 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: url("./img/bg.png");
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+}
+/* BACK BUTTON */
+@keyframes jiggle{
+  0% {transform: translateX(0px)}
+  50% {transform: translateX(3.5px)}
+  100%{transform: translateX(-3.5px)}
+}
+.fa-arrow-circle-left{
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  padding: 5px;
+  color: white;
+}
+
+.fa-arrow-circle-left:hover{
+  animation: jiggle 0.5s infinite;
+}
+/* TEXT */
+.desc{
+  text-align: center;
+  margin-top: 30px;
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 17px;
+}
+
+h1{
+  margin: 20px 5px;
+}
+
+ul{
+  margin: auto;
+  list-style-type: circle;
+  padding: 0;
+}
+
+li{
+  padding: 2px 5px;
+}
+
+span{
+  color:  yellow;
+}
+/* SOCIAL MEDIA LINKS */
+.fab{
+  padding: 5px;
+  border-radius: 3px;
+  margin: 2px 5px;
+}
+
+.fab:hover{
+  opacity: 0.7;
+}
+
+.fa-twitter{
+  background: #00acee;
+  color: white;
+}
+
+.fa-twitch{
+  background: #6441a5;
+  color: white;
+}
+
+
+/*PICTURE*/
+img {
+  bottom: 0;
+  right: 0;
+  flex: 1;
+}
